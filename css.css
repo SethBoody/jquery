@@ -1,0 +1,86 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 60px;
+}
+
+header{
+    height: 60px;
+    background-color: #f6f6f6;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: height 0.5s;
+}
+
+.changeHeader{
+    height: 50px;
+    background-color: gold;
+    box-shadow: 2px 5px 5px #000;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header ul li a{
+    display: block;
+    margin: 5px;
+    background-color: #f50;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+section{
+    min-height: 400px;
+    /* display: none; Dynamic app */
+}
+
+section.home{
+    background-color: coral;
+    /* display: block; Dynamic app */
+}
+
+section.about{
+    background-color: cornflowerblue;
+}
+
+section.portfolio{
+    background-color: darkorange;
+}
+
+section.contact{
+    background-color: darkcyan;
+}
+
+
+.portfolio img{
+    width: 250px;
+    height: 250px;
+}
+
+textarea{
+    display: block;
+}
+
+header ul li a.active{
+    background-color: #080;
+}
+
+.scrollTop{
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    display: none;
+}
